@@ -18,7 +18,7 @@ impl Config {
         tracing_subscriber::fmt()
             .with_env_filter(EnvFilter::from_default_env())
             .init();
-        info!("Loading COnfiguration");
+        info!("Loading Configuration for server");
 
         let mut cnf = config::Config::new();
         cnf.merge(config::Environment::default())?;
